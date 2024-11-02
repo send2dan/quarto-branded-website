@@ -75,13 +75,13 @@ typography:
     weight: 400
     decoration: "underline"
 
-logo:
-  small:
-    light: "./assets/block-s.svg"
-    dark: "./assets/block-s-reversed.svg"
-  medium:
-    light: "./assets/wordmark.svg"
-    dark: "./assets/wordmark-reversed.svg"
-  large:
-    light: "./assets/signature.svg"
-    dark: "./assets/signature-reversed.svg"
+#logo:
+#  small:
+#    light: "./assets/block-s.svg"
+#    dark: "./assets/block-s-reversed.svg"
+#  medium:
+#    light: "./assets/wordmark.svg"
+#    dark: "./assets/wordmark-reversed.svg"
+#  large:
+#    light: "./assets/signature.svg"
+#    dark: "./assets/signature-reversed.svg"
