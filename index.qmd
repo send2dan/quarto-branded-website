@@ -6,7 +6,7 @@ format:
       - href: index-dashboard.html
         icon: speedometer
         text: Dashboard
-  typst: default
+  #typst: default
   revealjs:
     output-file: index-reveal.html
   dashboard: 
