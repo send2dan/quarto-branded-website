@@ -30,9 +30,6 @@ jobs:
         # Render the Quarto file
         - name: "Render working directory"
           uses: quarto-dev/quarto-actions/render@v2
-          with:
-            path: "docs"
-
 
         # Upload a tar file that will work with GitHub Pages
         # Make sure to set a retention day to avoid running into a cap
