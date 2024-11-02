@@ -12,7 +12,7 @@ website:
       - text: "Dashboard"
         href: index-dashboard.html
       - text: "Typst"
-        href: index-typst.html
+        href: index-typst.pdf
     tools:
       - icon: github
         href: https://github.com/stanford-brand-yml/quarto-branded-website
