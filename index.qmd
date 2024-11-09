@@ -9,7 +9,7 @@ format:
   typst: 
     output-file: index-typst.pdf
   revealjs:
-    output-file: index-reveal.html
+    output-file: index-revealjs.html
   dashboard: 
     output-file: index-dashboard.html
 ---
