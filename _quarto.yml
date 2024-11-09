@@ -20,6 +20,8 @@ website:
 format:
   html:
     toc: true
+    theme:
+      - custom.scss
 
 # Use the brand file for all documents in the project
 brand: _brand.yml
