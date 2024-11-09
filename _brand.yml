@@ -79,10 +79,10 @@ typography:
     weight: 400
     decoration: "underline"
 
-logo:
-  small:
-    light: "./assets/block-s.png"
-    dark: "./assets/block-s.png"
+#logo:
+#  small:
+#    light: "./assets/block-s.png"
+#st is    dark: "./assets/block-s.png"
 #  medium:
 #    light: "./assets/wordmark.svg"
 #    dark: "./assets/wordmark-reversed.svg"
