@@ -18,6 +18,8 @@ format:
 
 This is a document themed using [**brand.yml**](https://posit-dev.github.io/brand-yml/)
 
+::: {.content-visible when-format="html:js"}
+
 ## Mermaid Diagram
 
 The following is a Mermaid diagram with branding applied:
@@ -30,6 +32,8 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+:::
 
 ## Subheading
 
