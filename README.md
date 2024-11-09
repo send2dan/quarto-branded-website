@@ -4,7 +4,7 @@
 
 # Stanford Brand Demo - Quarto
 
-This repository shows an implementation of [Stanford's identity guidelines][suidg] with [Quarto][qmain] using the new [`brand.yml` specification][byml] in [Quarto pre-release v1.6][qbyml] This provides a reusable way for creating consistent Stanford-branded academic and technical content across different output formats including HTML documents, RevealJS presentations, Typst documents (locally only), and dashboards.
+This repository shows an implementation of [Stanford's identity guidelines][suidg] with [Quarto][qmain] using the new [`brand.yml` specification][byml] in [Quarto pre-release v1.6][qbyml] This provides a reusable way for creating consistent Stanford-branded academic and technical content across different output formats including HTML documents, RevealJS presentations, Typst documents, and dashboards.
 
 > [!NOTE]
 >
@@ -20,13 +20,17 @@ The demo showcases Stanford's identity guidelines through different Quarto docum
 - Typst
 - Dashboard
 
+> [!NOTE]
+>
+> This demo is based on the [Example Brand Demo](https://github.com/cwickham/quarto-examples/tree/brand/brand/brand-simple) by Charlotte Wickham discussed in the [Quarto Branding Documentation][qbyml].
+
 ### Requirements
 
 - [Quarto][qmain] > 1.6.32
 
 > [!IMPORTANT]
 >
-> Figure out why the brand theme is not being picked up... 
+> Figure out why the brand theme isn't being applied to the top navigation bar.
 
 ## Structure
 
