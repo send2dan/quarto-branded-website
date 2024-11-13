@@ -8,7 +8,7 @@ This repository shows an implementation of [Stanford's identity guidelines][suid
 
 > [!NOTE]
 >
-> This demo is using **pre-release** versions of Quarto and the `brand.yml` specification. The final release may have changes to the specification and implementation.
+> This demo is using a **pre-release** version of Quarto 1.6 and the `brand.yml` specification. The final release may have changes to the specification and implementation.
 > If you wish to use this in your own projects, please make sure you have a [pre-release version of Quarto](https://quarto.org/docs/download/prerelease.html) and refer to the official documentation for the latest information.
 
 ## Overview
@@ -26,11 +26,7 @@ The demo showcases Stanford's identity guidelines through different Quarto docum
 
 ### Requirements
 
-- [Quarto][qmain] > 1.6.32
-
-> [!IMPORTANT]
->
-> Figure out why the brand theme isn't being applied to the top navigation bar.
+- [Quarto][qmain] > 1.6.32 (pre-release)
 
 ## Structure
 
@@ -56,12 +52,14 @@ Example from `_brand.yml`:
 
 ```yaml
 color:
-  primary: "#8C1515"    # Stanford Cardinal Red
-  secondary: "#4D4F53"  # Cool Grey
-  success: "#175E54"    # Dark Green
-  info: "#006CB8"       # Digital Blue
-  warning: "#FFBD3D"    # Sun
-  danger: "#820000"     # Dark Cardinal Red
+   palette:
+      cardinal: "#8C1515"
+      white: "#FFFFFF"
+      process-black: "#2E2D29"
+  
+   foreground: process-black
+   background: white
+   primary: cardinal
 ```
 
 We register the brand configuration in the project's `_quarto.yml` with:
@@ -70,7 +68,21 @@ We register the brand configuration in the project's `_quarto.yml` with:
 brand: _brand.yml
 ```
 
+We've also defined custom override to the navigation bar background color in the `_brand.yml`:
 
+```yaml
+defaults:
+  bootstrap:
+    navbar-bg: $brand-cardinal
+```
+
+This will change the navigation bar background color to Cardinal Red.
+
+> [!NOTE]
+>
+> This specification may change in the final release of 
+> Quarto's brand-yml support. Please refer to the official 
+> documentation for the latest information.
 
 ## Usage
 

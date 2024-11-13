@@ -10,7 +10,7 @@ website:
       - text: "RevealJS"
         href: index-revealjs.html
       - text: "Dashboard"
-        href: index-dashboard.html
+        href: dashboard.html
       - text: "Typst"
         href: index-typst.pdf
     tools:

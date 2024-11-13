@@ -3,7 +3,7 @@ title: "Brand"
 format:
   html: 
     other-links:
-      - href: index-dashboard.html
+      - href: dashboard.qmd
         icon: speedometer
         text: Dashboard
   typst: 

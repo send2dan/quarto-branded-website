@@ -1,0 +1,81 @@
+---
+title: "Brand"
+format: dashboard
+---
+
+## Row
+This is a document themed using [**brand.yml**](https://posit-dev.github.io/brand-yml/)
+
+## Row
+
+::: {.valuebox icon="arrow-repeat"}
+In Progress 
+
+5
+:::
+
+
+::: {.valuebox icon="arrow-up" title="Change" color="success"}
+20
+:::
+
+
+::: {.valuebox icon="calendar-week" title="Hiccup" color="danger"}
+50
+:::
+
+<!--
+```python
+#| eval: false
+#| content: valuebox
+#| title: "Change"
+change = 20
+dict(
+    value = 20,
+    icon = "arrow-up",
+    color = "success"
+) 
+```
+
+
+```r
+#| eval: false
+#| content: valuebox
+#| title: "Hiccup"
+
+list(
+  icon = "calendar-week",
+  color = "danger",
+  value = 50
+)
+```
+-->
+
+
+## Row
+
+```{mermaid}
+%%| echo: false
+%%| fig-align: center
+%%| title: "Mermaid Diagram"
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+::: card
+::: card-header
+Static Image or Graphic
+:::
+::: card-body
+{{< placeholder 400 600 format=svg >}}
+:::
+:::
+
+
+
+## Row
+
+{{< lipsum 1 >}}
