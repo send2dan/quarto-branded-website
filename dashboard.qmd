@@ -57,6 +57,7 @@ list(
 ```{mermaid}
 %%| echo: false
 %%| fig-align: center
+%%| fig-responsive: true
 %%| title: "Mermaid Diagram"
 graph TD;
     A-->B;
