@@ -76,7 +76,7 @@ defaults:
     navbar-bg: $brand-cardinal
 ```
 
-This will change the navigation bar background color to Cardinal Red.
+This will change the navigation bar background color to Cardinal Red, which is the primary color in Stanford's identity guidelines and is [the default color for a navigation bar](https://identity.stanford.edu/digital/web-design/brand-compliance/).
 
 > [!NOTE]
 >
