@@ -70,7 +70,7 @@ graph TD;
 Static Image or Graphic
 :::
 ::: card-body
-{{< placeholder 400 600 format=svg >}}
+{{< placeholder 400 300 format=svg >}}
 :::
 :::
 
