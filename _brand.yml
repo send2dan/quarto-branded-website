@@ -79,6 +79,13 @@ typography:
     weight: 400
     decoration: "underline"
 
+## The following may change in the future
+## Keep an eye on the Quarto documentation for updates and monitor
+## https://github.com/quarto-dev/quarto-cli/pull/11378
+defaults:
+  bootstrap:
+    navbar-bg: $brand-cardinal
+
 #logo:
 #  small:
 #    light: "./assets/block-s.png"

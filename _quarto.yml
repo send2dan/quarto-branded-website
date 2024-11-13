@@ -21,7 +21,7 @@ format:
   html:
     toc: true
     theme:
-      - custom.scss
+      - brand
 
 # Use the brand file for all documents in the project
 brand: _brand.yml
