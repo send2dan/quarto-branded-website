@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Brand",
+    "section": "",
+    "text": "This is a document themed using brand.yml"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Brand",
+    "section": "",
+    "text": "This is a document themed using brand.yml"
+  },
+  {
+    "objectID": "index.html#mermaid-diagram",
+    "href": "index.html#mermaid-diagram",
+    "title": "Brand",
+    "section": "Mermaid Diagram",
+    "text": "Mermaid Diagram\nThe following is a Mermaid diagram with branding applied:\n\n\n\n\n\ngraph TD;\n    A--&gt;B;\n    A--&gt;C;\n    B--&gt;D;\n    C--&gt;D;"
+  },
+  {
+    "objectID": "index.html#subheading",
+    "href": "index.html#subheading",
+    "title": "Brand",
+    "section": "Subheading",
+    "text": "Subheading\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  }
+]
