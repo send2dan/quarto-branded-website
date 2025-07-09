@@ -1,5 +1,10 @@
 ---
 title: "Brand"
+institute: "Newcastle upon Tyne Hospitals NHS Foundation Trust"
+author: "Daniel Weiand; Jamie Lupton" 
+# date: "`r format(Sys.time(), '%a %B %d %Y')`"
+date: today
+date-format: "dddd, D MMMM, YYYY"
 format:
   html: 
     other-links:

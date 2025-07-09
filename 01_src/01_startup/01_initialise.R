@@ -2,22 +2,20 @@
 
 if (!require("here")) {
   install.packages("here",
-    repos = "https://packagemanager.posit.co/cran/latest", # "https://cran.r-project.org/"
-    type = "win.binary"
+                   repos = "https://packagemanager.posit.co/cran/latest", # "https://cran.r-project.org/"
+                   type = "win.binary"
   )
 }
 
 library(here)
-
-set_here()
 
 # Package list ---------------------------------
 
 # install {renv} if not already done so
 if (!require("renv")) {
   install.packages("renv",
-    repos = "https://packagemanager.posit.co/cran/latest", # "https://cran.r-project.org/"
-    type = "win.binary"
+                   repos = "https://packagemanager.posit.co/cran/latest", # "https://cran.r-project.org/"
+                   type = "win.binary"
   )
 }
 
@@ -38,28 +36,36 @@ options(
 # list packages to download -----------------------------------------------
 
 packages_to_download <- c(
-  #"dotenv", # for reading ".env" file
+  "dotenv", # for reading ".env" file
   "bookdown", # required to set knitr options
   "here", # for finding files
   #"tidytext", # for text cleaning tools
-  #"shiny", # for viewing rendered quarto reports (?)
+  "shiny", # for viewing rendered quarto reports (?)
   "quarto", # for quarto report rendering scripts
   #"flextable", # for creating pretty (non-interactive) tables
   #"reactable", # for creating interactive tables in quarto reports
   #"plotly", # for creating interactive charts in quarto reports
+  #"patchwork", #to create ggplot patchworks
+  "scales",
   #"excel.link", # to read password protected excel files (xl.read.file function)
+  "fs", # to create directories and move files etc..
   # "dplyr",
-  # "lubridate",
+  "lubridate", # for dates and times - also incl in tidyverse
   # "stringr",
   # "forcats",
   # "purrr",
   #"odbc", # for SQL connection to APEX
   #"DBI", # for SQL connection to APEX
+  #"RSQLite", # to create database files
   "tidyverse",
   "readr", #to read csv files
   "readxl", #to read excel files
-  "janitor" # clean_names functiom
-  #"trelliscopejs" #for creating interactive dashboards in quarto reports
+  "janitor" # clean_names function
+  #"bench", # for timing SQL queries
+  #"trelliscopejs", # for creating interactive dashboards in quarto reports
+  #"Microsoft365R", # for connecting R to Outlook for email sending
+  #"blastula", # for composing HTML emails
+  #"ggtext" # allows addition of HTML color spans in chart title/subtitle text... requires plot.subtitle = ggtext::element_markdown() to be added to the theme to render the HTML
 )
 
 # check packages already installed vs. listed for install -----------------
@@ -117,20 +123,20 @@ for (i in packages_to_download) {
 # Get the packages references
 knitr::write_bib(c(.packages(), "bookdown"), here::here("packages.bib"))
 
-# # merge the zotero references and the packages references
-# cat(paste("% Automatically generated", Sys.time()),
-#   "\n% DO NOT EDIT",
-#   {
-#     readLines("citedrive.bib") |> # which .bib file is being used?
-#       paste(collapse = "\n")
-#   },
-#   {
-#     readLines("packages.bib") |>
-#       paste(collapse = "\n")
-#   },
-#   file = "biblio.bib",
-#   sep = "\n"
-# )
+# merge the zotero references and the packages references
+cat(paste("% Automatically generated", Sys.time()),
+    "\n% DO NOT EDIT",
+    {
+      readLines(here("citedrive.bib")) |> # which .bib file is being used?
+        paste(collapse = "\n")
+    },
+    {
+      readLines(here("packages.bib")) |>
+        paste(collapse = "\n")
+    },
+    file = here("biblio.bib"),
+    sep = "\n"
+)
 
 # knitr options -----------------------------------------------------------
 

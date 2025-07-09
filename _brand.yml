@@ -1,98 +1,104 @@
-# Based on the Stanford University brand guidelines: https://identity.stanford.edu/
-# This file is used to define the brand colors, typography, and logo for the site / Shiny apps.
-
-# Important: 
-# Please note that is _not_ an official Stanford University product.
+#https://quarto.org/docs/authoring/brand.html
 
 meta:
   name:
-    full: "Stanford University"
-    short: "Stanford"
+    short: NHSR
+    full: NHS-R Community
   link:
-    home: "https://www.stanford.edu"
-    facebook: "https://www.facebook.com/stanford"
-    twitter: "https://twitter.com/stanford"
-    linkedin: "https://www.linkedin.com/school/stanford-university"
+    home: https://nhsrcommunity.com/
+    brand-guidelines: https://nhsrway.nhsrcommunity.com/style-guides.html#branding
+
+logo:
+  # Download the NHS-R Community logo and store it next to _brand.yml
+  # You'll have to update this section with the correct file names
+  images:
+    nhsr-logo:
+      path: logo/full-colour-logo.jpg
+      alt: logo
+  small: nhsr-logo
+  medium: nhsr-logo
+  large: nhsr-logo
+
 
 color:
+  # NHS-R Community uses the NHS England colour palette
+  # https://www.england.nhs.uk/nhsidentity/identity-guidelines/colours/ used
+  # under the OGL Licence v3.0
   palette:
-    cardinal: "#8C1515"
-    cardinal-dark: "#820000"
-    cardinal-light: "#B83A4B"
-    cool-grey: "#4D4F53"
-    warm-grey: "#3F3C30"
-    beige: "#F4F4F4"
-    stone: "#544948"
-    sky: "#007C92"
-    fog: "#DAD7CB"
-    redwood: "#8D3C1E"
-    link-blue: "#006CB8"
+    # Core neutrals (Level 2)
     white: "#FFFFFF"
-    palo-alto: "#175E54"
-    digital-red: "#B1040E"
-    process-black: "#2E2D29"
-  
-  foreground: process-black
+    black: "#231F20"
+    grey-dark: "#425563"
+    grey-mid: "#768692"
+    grey-pale: "#E8EDEE"
+
+    # Blues (Level 1)
+    blue-dark: "#003087"
+    blue: "#005EB8"
+    blue-bright: "#0072CE"
+    blue-light: "#41B6E6"
+    blue-aqua: "#00A9CE"
+
+    # Greens (Level 3)
+    green-dark: "#006747"
+    green: "#009639"
+    green-light: "#78BE20"
+    green-aqua: "#00A499"
+
+    # Purples and Pinks
+    purple: "#330072"
+    pink-dark: "#7C2855"
+    pink: "#AE2573"
+
+    # Reds
+    red-dark: "#8A1538"
+    red: "#DA291C"  # Emergency Services Red
+
+    # Yellows and Orange
+    orange: "#ED8B00"
+    yellow-warm: "#FFB81C"
+    yellow: "#FAE100"
+
+    # Bootstrap color aliases - using closest matches without duplication
+    indigo: blue-dark
+    cyan: blue-aqua
+    teal: green-aqua
+
+  foreground: black
   background: white
-  primary: cardinal
-  secondary: cool-grey
-  tertiary: fog
-  success: palo-alto
-  info: sky
-  warning: digital-red
-  danger: cardinal-dark  
-  light: beige
-  dark: process-black
+  primary: blue
+  secondary: grey-dark
+  tertiary: grey-pale
+  success: green
+  danger: red
+  warning: yellow-warm
+  info: blue-light
+  light: grey-pale
+  dark: grey-dark
 
 typography:
   fonts:
-    - source: bunny
-      family: "Source Sans Pro"
-      weight: [300, 400, 600, 700]
-      style: [normal, italic]
-    
-    - source: bunny
-      family: "Source Serif Pro"
-      weight: [400, 600, 700]
-      style: [normal]
+    - family: "Frutiger W01"
+      source: file
+      files:
+        - path: fonts/FrutigerLTW01-55Roman.woff2
+          weight: 400
+        - path: fonts/FrutigerLTW01-65Bold.woff2
+          weight: 700
       
-    - source: system
-      family: "Menlo"  # For monospace
-  
   base:
-    family: "Source Sans Pro"
-    size: "16px"
+    family: "Frutiger W01"
     weight: 400
     line-height: 1.5
-  
-  headings:
-    family: "Source Serif Pro"
-    weight: 600
-    line-height: 1.2
-  
-  monospace:
-    family: "Menlo, Monaco, Consolas, monospace"
-    size: "14px"
-    weight: 400
-  
-  link:
-    weight: 400
-    decoration: "underline"
 
-## The following may change in the future
-## Keep an eye on the Quarto documentation for updates and monitor
-## https://github.com/quarto-dev/quarto-cli/pull/11378
+  headings:
+    family: "Frutiger W01"
+    weight: 700
+    line-height: 1.25
+    color: blue
+
 defaults:
   bootstrap:
-    navbar-bg: $brand-cardinal
-
-#logo:
-#  small:
-#    light: "./assets/block-s.png"
-#    dark: "./assets/block-s.png"
-#  medium:
-#    light: "./assets/wordmark.svg"
-#    dark: "./assets/wordmark-reversed.svg"
-#  large:
-#    light: "./assets/signature.svg"
-#    dark: "./assets/signature-reversed.svg"
+    defaults:
+      # NHS-R Community specific variables could be added here
+      enable-rounded: false
